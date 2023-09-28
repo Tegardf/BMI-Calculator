@@ -8,7 +8,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section></section>
+    <section class="base">
+        <div class="container">
+            <div class="title">
+                <h1>Check Your BMI</h1>
+                <h2>Enter your weight and height below to check your BMI result</h2>
+            </div>
+            <div class="form">
+                <label for="weight">Put your weight in here (KG)</label>
+                <input type="text" name="weight" id="berat" placeholder="60">
+                <label for="height">Put your height in here (CM)</label>
+                <input type="text" name="height" id="tinggi" placeholder="167">
+                <button type="submit" id="submit-form">Calculate BMI</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="floating-result">
+        <button type="reset" id="close">X</button>
+        <div class="text">
+            <h2>Your BMI score</h2>
+            <h1 id="BMI-value"></h1>
+            <h2>You are</h2>
+            <h1 id="BMI-cat"></h1>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
