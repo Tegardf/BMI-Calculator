@@ -14,18 +14,19 @@
                 <h1>Check Your BMI</h1>
                 <h2>Enter your weight and height below to check your BMI result</h2>
             </div>
-            <div class="form">
-                <label for="weight">Put your weight in here (KG)</label>
-                <input type="text" name="weight" id="berat" placeholder="60">
-                <label for="height">Put your height in here (CM)</label>
-                <input type="text" name="height" id="tinggi" placeholder="167">
+            <Form id="formInput">
+                <label for="berat">Put your weight in here (KG)</label>
+                <input type="number" name="weight" id="berat" placeholder="60">
+                <label for="tinggi">Put your height in here (CM)</label>
+                <input type="number" name="height" id="tinggi" placeholder="167">
                 <button type="submit" id="submit-form">Calculate BMI</button>
-            </div>
+            </Form>
+            <div id="warning"></div>
         </div>
     </section>
 
-    <div class="floating-result">
-        <button type="reset" id="close">X</button>
+    <div id="floating-result">
+        <button type="reset" id="close" onclick="window.location.reload(true)">X</button>
         <div class="text">
             <h2>Your BMI score</h2>
             <h1 id="BMI-value"></h1>
