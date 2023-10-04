@@ -26,7 +26,7 @@ const submit = (event) =>{
         container.replaceChildren();
         togglePopup();
         result = calBMI(berat,tinggi);
-        document.getElementById("BMI-value").innerHTML = result;
+        document.getElementById("BMI-value").innerHTML = Math.round(result*10)/10;
         document.getElementById("BMI-cat").innerHTML = checkBMI(result);
     }else if (berat=='' && tinggi=='') {
         container.innerHTML = '<p>Silahkan masukkan Berat dan Tinggi anda</p>';

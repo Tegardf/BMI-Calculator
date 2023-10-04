@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root{
+    --color1:#EDEFEE;
+    --color2:#F7F1F0;
+    --color3:#c3a6a0;
+    --color4:#a15c38;
+    --color5:#262220;
+}
+
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -35,7 +45,7 @@ input[type=number] {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color:var(--color1);
     padding: 20px;
     text-align: center;
     border-radius: 12px;
@@ -48,12 +58,24 @@ input[type=number] {
     right: 10px;
     width: 25px;
     height: 25px;
-    font-size: 20px;
+    font-size: 12px;
+    font-weight: 900;
     border-radius: 6px;
     cursor: pointer;
+    color: var(--color5);
+}
+#close:hover{
+    background-color: red;
+    color: var(--color1);
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
 }
 .popUp-content .text *{
     margin: 10px 0px;
+    color: var(--color5);
+}
+.popUp-content .text h1{
+    font-weight: 800;
 }
 
 .base {
@@ -67,7 +89,7 @@ input[type=number] {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: aqua;
+    background-color: var(--color3);
     width: 700px;
     height: 600px;
     border-radius: 15px;
@@ -82,9 +104,13 @@ input[type=number] {
 }
 .title h1{
     text-align: center;
+    font-size: xx-large;
+    font-weight: 900;
+    color: var(--color5);
 }
 .title h2{
     text-align: center;
+    font-size: larger;
 }
 #formInput{
     display: flex;
@@ -97,12 +123,17 @@ input[type=number] {
 #formInput label{
     text-align: left;
     width: 100%;
+    font-size: medium;
+    font-weight: 500;
 }
 #formInput input{
     border-radius: 8px;
     padding: 0px 10px;
-    height: 28px;
+    height: 32px;
     width: 100%;
+    font-size: larger;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 #formInput button{
     border-radius: 8px;
@@ -110,4 +141,14 @@ input[type=number] {
     padding: 6px 0px;
     margin-top: 20px;
     cursor: pointer;
+    background-color: #EDEFEE;
+    font-weight: 700;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#formInput button:hover{
+    border-color: #a15c38;
+    background-color: #a15c38;
+    color: var(--color1);
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
