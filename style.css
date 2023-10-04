@@ -43,7 +43,7 @@ input[type=number] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 320px;
     height: 200px;
     top: 40%;
     left: 50%;
@@ -124,7 +124,7 @@ input[type=number] {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 60%;
+    width: 65%;
     gap: 20px;
 }
 #formInput label{
